@@ -2,113 +2,150 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>Biblioclass</title>
+
+	<!---- Swiper CSS ---->
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+	<!---- CSS ---->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
 </head>
-<div class="container">
-
-<!------------------------ Section of the NavBar --------------------------->
-	<nav>
-		<div>
-			<a class="logo" href="#">Biblioclass</a>
-		</div>
-		<div>
-			<a class="active" href="#inicio">Inicio</a>
-		</div> 
-		<div>
-			<a href="#pesquisa">Pesquisa</a>
-		</div>
-		<div>
-			<h4>Coleções</h4>
-		</div>
-		<div id="colecoes">
+<body>
+	<div class="container">
+	<!------------------------ Section of the NavBar --------------------------->
+		<nav>
 			<div>
-				<a href="#curtidas">Curtidas</a>
+				<a class="logo" href="#">Biblioclass</a>
 			</div>
 			<div>
-				<a href="#playlists">Playlists</a>
+				<a class="active" href="#inicio">Inicio</a>
+			</div> 
+			<div>
+				<a href="#pesquisa">Pesquisa</a>
 			</div>
 			<div>
-				<a href="artistas">Artistas</a>
+				<h4>Coleções</h4>
 			</div>
-			<div>
-				<a href="historico">Histórico</a>
+			<div id="colecoes">
+				<div>
+					<a href="#curtidas">Curtidas</a>
+				</div>
+				<div>
+					<a href="#playlists">Playlists</a>
+				</div>
+				<div>
+					<a href="artistas">Artistas</a>
+				</div>
+				<div>
+					<a href="historico">Histórico</a>
+				</div>
 			</div>
+		</nav>
+
+	<!------------------------ Section of the header --------------------------->
+		<header>
+			<div id="backnforth">
+				<a href="#back"><</a>
+				<a href="#forward">></a>
+			</div>
+			<h1>Inicio</h1>
+		</header>
+
+	<!------------------ Section of the recently played ---------------------->
+		<div id="recente">
+			<h2>Recentemente Tocado</h2>
 		</div>
-	</nav>
 
-<!------------------------ Section of the header --------------------------->
-	<header>
-		<div id="backnforth">
-			<a href="#back"><</a>
-			<a href="#forward">></a>
-		</div>
-		<h1>Inicio</h1>
-	</header>
-
-<!------------------ Section of the recently played ---------------------->
-	<div id="recente">Recentemente Tocado</div>
-
-<!-------------------- Section of the first artist ----------------------->
-	<div id="artista1">
+	<!-------------------- Section of the slider------------------------------>
+	<!-------------------- Section of the first artist ----------------------->
+		<div id="artista1">
 		<h2>Heitor Vila-Lobos</h2>
-		<div class="nested">
-			<figure>
-				<img src="img/lobos.png">
-				<figcaption>Bachianas No.4</figcaption>
-			</figure>
-			<figure>
-				<img src="img/lobos.png">
-				<figcaption>Impressões Seresteiras</figcaption>
-			</figure>
-			<figure>
-				<img src="img/lobos.png">
-				<figcaption>O Trenzinho do Caipira</figcaption>
-			</figure>
-			<figure>		
-				<img src="img/lobos.png">
-				<figcaption>Valsa da Dor</figcaption>
-			</figure>
-			<figure>
-				<img src="img/lobos.png">
-				<figcaption>Bachianas No.5</figcaption>
-			</figure>
+			<div class="slide-container">
+				<div class="slide-content">
+					<div class="card-wrapper">
+						<div class="card">
+							<div class="image-content">
+								<div class="card-image">
+									<img src="img/lobos.png" alt="" class="card-image">
+								</div>
+							</div>
+							<div class="card-content">
+								<h3 class="name-song">Bachienas No.4</h3>
+								<h4 class="name-artist">Heitor Vila-Lobos</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
+<!--
+			<h2>Heitor Vila-Lobos</h2>
+			<div class="nested">
+				<figure>
+					<img src="img/lobos.png">
+					<figcaption>Bachianas No.4</figcaption>
+				</figure>
+				<figure>
+					<img src="img/lobos.png">
+					<figcaption>Impressões Seresteiras</figcaption>
+				</figure>
+				<figure>
+					<img src="img/lobos.png">
+					<figcaption>O Trenzinho do Caipira</figcaption>
+				</figure>
+				<figure>		
+					<img src="img/lobos.png">
+					<figcaption>Valsa da Dor</figcaption>
+				</figure>
+				<figure>
+					<img src="img/lobos.png">
+					<figcaption>Bachianas No.5</figcaption>
+				</figure>
+			</div>
+		</div> -->
 
-<!-------------------- Section of the second artist ----------------------->
-	<div id="artista2">
-		<h2>Carlos Gomes</h2>
-		<div class="nested">
-			<figure>
-				<img src="img/gomes.png">
-				<figcaption>O Guarani</figcaption>
-			</figure>
-			<figure>
-				<img src="img/gomes.png">
-				<figcaption>Quem Sabe?!...</figcaption>
-			</figure>
-			<figure>
-				<img src="img/gomes.png">
-				<figcaption>Alvorada</figcaption>
-			</figure>
-			<figure>		
-				<img src="img/gomes.png">
-				<figcaption>Grande Valsa de Bravura</figcaption>
-			</figure>
-			<figure>
-				<img src="img/gomes.png">
-				<figcaption>Burrico de Pau</figcaption>
-			</figure>
+	<!-------------------- Section of the second artist ----------------------->
+		<div id="artista2">
+			<h2>Carlos Gomes</h2>
+			<!--
+			<div class="nested">
+				<figure>
+					<img src="img/gomes.png">
+					<figcaption>O Guarani</figcaption>
+				</figure>
+				<figure>
+					<img src="img/gomes.png">
+					<figcaption>Quem Sabe?!...</figcaption>
+				</figure>
+				<figure>
+					<img src="img/gomes.png">
+					<figcaption>Alvorada</figcaption>
+				</figure>
+				<figure>		
+					<img src="img/gomes.png">
+					<figcaption>Grande Valsa de Bravura</figcaption>
+				</figure>
+				<figure>
+					<img src="img/gomes.png">
+					<figcaption>Burrico de Pau</figcaption>
+				</figure>
+			</div>
+		-->
 		</div>
-	</div>
+</body>
+<!------------------------ Section of the player --------------------------->
+	<section id="player">Player</section>
 <!------------------------ Section of the footer --------------------------->
 	<footer>
 		<h4>Created by CODDING COLLIE</h3>
 	</footer>
-
-<!------------------------ Section of the player --------------------------->
-	<div id="player">Player</div>
 </div>
+
+<!---- Swiper JS ---->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!---- JavaScript ---->
+<script scr="js/script.js"></script>
 </html>

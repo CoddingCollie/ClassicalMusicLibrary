@@ -3,6 +3,11 @@
 	padding: 0%;
 	margin: 0%;
 	font-family: 'Poppins', sans-serif;
+	color: #fff;
+	box-sizing: border-box;
+}
+body{
+	background-color: #000;
 }
 .container{
 	display:grid;
@@ -15,56 +20,98 @@
 		"nav artista2"
 		"nav footer"
 		"nav player";
-	grid-gap: 0.2rem;
+	grid-gap: 0.5rem;
+}
+.container div{
+	border-radius: 10px;
+}
+.container footer{
+	border-radius: 10px;
+}
+.container nav{
+	border-radius: 10px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 nav{
-	background-color: #a7ffeb;
+	background-color: #0a0a0a;
 	grid-area: nav;
 }
 header{
-	background-color: #84ffff;
+	background-color: #0a0a0a;
 	grid-area: header;
 	position: sticky; /*places the bar in a fixed position within the grid*/
 	top: 0; /*necessary for sticky to work*/
+	z-index: 1;
 }
 #recente{
-	background-color: #18ffff;
+	background-color: #171717;
 	grid-area: recente;
 }
 #artista1{
-	background-color: #6fffd2;
+	background-color: #171717;
 	grid-area: artista1;
 }
 #artista2{
-	background-color: #64ffda;
+	background-color: #171717;
 	grid-area: artista2;
 }
 #player{
-	background-color: #73ffba;
+	background-color: #0a0a0a;
 	grid-area: player;
 	position: sticky; /*places the bar in a fixed position within the grid*/
 	bottom: 0px; /*necessary for sticky to work*/
 }
 footer{
-	background-color: #1de9b6;
+	background-color: #171717;
 	grid-area: footer;
 	text-align: center;
 }
 
- /*----- Edits for the itens inside the artist sections -----*/
-.nested{
-	display:grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+/*----- Edits for the itens inside the artist sections -----*/
+.slide-container{
+	max-width: 1120px;
+	width: 100%;
+	background-color: greenyellow;
 }
-.nested figure{
-	padding: 20px;
-	text-align: center;
+.slide-content{
+	margin: 0 40px;
 }
-img{
+.card{
+	width: 190px;
+	background-color: #121212;
+	padding: 20px 20px;
+}
+.card:hover{
+	background-color: #2e2e2e;
+}
+.image-content,
+.card-content{
+	display: flex;
+	flex-direction: column;
+}
+.image-content{
+	align-content: center;
+	padding-bottom: 20px;
+	position: relative;
+}
+.card-image{
+	position: relative;
+	height: 150px;
 	width: 150px;
 }
-figcaption{
-	font-size: 0.75rem;
+.card-image .card-image{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.name-song{
+	font-size: 0.9rem;
+}
+.name-artist{
+	font-size: 0.8rem;
+	font-weight: 250;
+	color: #707070;
 }
 
  /*----- Edits for the itens inside the header -----*/
@@ -85,6 +132,11 @@ h1{
 		"footer"
 		"player"
 		"nav"
+	}
+	.container nav{
+		border-radius: 00px;
+		margin-top: 0.0rem;
+		margin-bottom: 0.0rem;
 	}
 	nav{
 		justify-content: center;
