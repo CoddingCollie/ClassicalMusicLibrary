@@ -75,34 +75,35 @@ footer{
 	background-color: greenyellow;
 }
 .slide-content{
+	display: grid;
+	grid-auto-flow: column;
 	margin: 0 40px;
+}
+
+.slide-content .card:first-child{
+	margin-left: 0px;
 }
 .card{
 	width: 190px;
 	background-color: #121212;
 	padding: 20px 20px;
+	cursor: pointer;
+	margin-left: 14px;
 }
 .card:hover{
 	background-color: #2e2e2e;
 }
-.image-content,
+.card-image,
 .card-content{
 	display: flex;
 	flex-direction: column;
 }
-.image-content{
+.card-image{
 	align-content: center;
 	padding-bottom: 20px;
 	position: relative;
-}
-.card-image{
-	position: relative;
 	height: 150px;
 	width: 150px;
-}
-.card-image .card-image{
-	height: 100%;
-	width: 100%;
 	object-fit: cover;
 }
 .name-song{
